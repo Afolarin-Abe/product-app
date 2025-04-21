@@ -24,23 +24,17 @@
 </style>
 
 
-<!-- <div class="product-box">
+<div class="product-box">
   <img
     class="product-image"
     src="https://images.vexels.com/media/users/3/156928/isolated/lists/6c65c177e94e7554e1fdb0af3038acb7-question-mark-square-icon.png"
     alt="product Image"
   />
-  <div class="product-name">Wireless Headphones</div>
-  <div class="product-price">$59.99</div>
+  <div class="product-name">{{ item.name }}</div>
+  <div class="product-price">${{ item.price }}</div>
   <div class="product-description">
-    High-quality wireless headphones with noise cancellation and 20 hours of
-    battery life.
+    {{ item.description }}
   </div>
-</div> -->
+  <button (click)="onViewDetails()">View Details</button>
+</div>
 
-<div class="product-card">
-    <h3>{{ item.name }}</h3>
-    <p>Price: ${{ item.price }}</p>
-    <p>{{ item.description }}</p>
-    <button (click)="onViewDetails()">View Details</button>
-  </div>
