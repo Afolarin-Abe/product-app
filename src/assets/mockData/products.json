@@ -1,0 +1,11 @@
+[
+    { "id": 1, 
+     "name": "Guitar", 
+     "price": 200, 
+     "description": "An awesome tool to make music"},
+     { "id": 2, 
+     "name": "Saxophone", 
+     "price": 100, 
+     "description": "Make swee Jazz tunes"}
+
+]
