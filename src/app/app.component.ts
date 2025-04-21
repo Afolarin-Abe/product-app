@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProductListComponent } from "./features/product/product-list/product-list.component";
 import { NavbarComponent } from "./features/layout/navbar/navbar.component";
 
 @Component({
@@ -10,5 +9,7 @@ import { NavbarComponent } from "./features/layout/navbar/navbar.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'test';
+title(title: any) {
+  throw new Error('Method not implemented.');
+};
 }
