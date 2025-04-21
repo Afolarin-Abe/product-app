@@ -1,13 +1,11 @@
-  <div class="product-box">
-    <img
-      class="product-image"
-      src="https://images.vexels.com/media/users/3/156928/isolated/lists/6c65c177e94e7554e1fdb0af3038acb7-question-mark-square-icon.png"
-      alt="Image of Question Mark"
-    />
-    <div class="product-name">{{ item.name }}</div>
-    <div class="product-price">${{ item.price }}</div>
-    <div class="product-description">{{ item.description }}
-    </div>
-    <button class="view-button" (click)="onViewDetails()">View Details</button>
-  </div>
-
+<div class="product-box">
+  <img
+    class="product-image"
+    src="{{ item.image }}"
+    alt="Image of {{ item.name }}"
+  />
+  <div class="product-name">{{ item.name }}</div>
+  <div class="product-price">${{ item.price }}</div>
+  <div class="product-description">{{ item.description }}</div>
+  <button class="view-button" (click)="onViewDetails()">View Details</button>
+</div>

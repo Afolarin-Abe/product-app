@@ -1,0 +1,8 @@
+<div class="container">
+  <product-card
+    *ngFor="let item of items"
+    [item]="item"
+    (viewDetails)="goToProductDetail($event)"
+  >
+  </product-card>
+</div>

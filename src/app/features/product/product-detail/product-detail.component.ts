@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../../core/services/product.service';
+import { ProductService } from '../../../core/services/product.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
@@ -9,10 +9,12 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrl: './product-detail.component.css'
 })
 export class ProductDetailComponent implements OnInit{
+  // Inject Dependancies
   constructor(private productSerive: ProductService, private route: ActivatedRoute){}
 
   productDetail: any;
 
+  // Pages will load when initialized 
   ngOnInit(): void {
     this.route.
       paramMap.subscribe(

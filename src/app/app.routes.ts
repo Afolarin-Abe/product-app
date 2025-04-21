@@ -1,11 +1,10 @@
 import { Routes } from '@angular/router';
-import { ProductListComponent } from './product/product-list/product-list.component';
-import { ProductDetailComponent } from './product/product-detail/product-detail.component';
+import { ProductListComponent } from './features/product/product-list/product-list.component';
+import { ProductDetailComponent } from './features/product/product-detail/product-detail.component';
+import { LandingPageComponent } from './features/landing-page/landing-page.component';
 
 export const routes: Routes = [
+    { path: '', component: LandingPageComponent },
     { path: 'products', component: ProductListComponent },
-    //{ path: '', component: ProductListComponent },
     { path: 'products/:id', component: ProductDetailComponent },
-    // {path: '**', component: ProductListComponent},
-    { path: '', component: ProductDetailComponent },
 ];

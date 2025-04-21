@@ -1,0 +1,36 @@
+
+.landing {
+    display:block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-color:tan;
+    color: #fff;   
+}
+
+.landing h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    color: #795548;
+}
+
+.landing p {
+    font-size: 19px;
+    margin-bottom: 32px;
+}
+
+.cta-button {
+    background-color: #212121;
+    color: #FFEB3B;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}

@@ -12,6 +12,7 @@ export class ProductCardComponent {
   @Input() item!: ProductItem;
   @Output() viewDetails = new EventEmitter<number>();
 
+  // Send event on click
   onViewDetails() {
     this.viewDetails.emit(this.item.id);
     console.log("Directing to " + this.item.name + " page..."); 
