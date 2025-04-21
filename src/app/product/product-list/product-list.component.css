@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    justify-content: space-between; 
+}
+  
+product-card {
+    flex: 0 1 calc(25% - 16px); 
+    box-sizing: border-box;
+}
